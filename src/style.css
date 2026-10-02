@@ -55,3 +55,6 @@ border:1px solid #56dfff25;box-shadow:inset 0 0 40px #45dfff22}
 .bodyart i:nth-of-type(2){transform:translateX(-50%) rotate(14deg)}
 .bodyart i:nth-of-type(3){transform:translateX(-50%) rotate(-14deg)}
 @media(max-width:1450px){header{grid-template-columns:330px 1fr 430px}.headright{gap:8px}.topgrid{grid-template-columns:minmax(520px,1.65fr) minmax(250px,.78fr) minmax(220px,.67fr)}}
+
+/* V0.8 — interação da tela-mestre recriada */
+.bodyart{transition:transform .25s ease;transform-origin:50% 52%}.related svg{cursor:pointer;transition:.18s}.related svg:hover{color:#63fff1}.related svg.fav{color:#ffe36b;fill:#ffe36b}.viewtools button:active,.layers button:active,.related button:active,.readstatus button:active{transform:scale(.96)}.layout aside button,.viewtools button,.layers button,.related button,.readstatus button,.wavegrid button{transition:.18s}.layout aside button:hover,.viewtools button:hover,.layers button:hover{background-color:#07506a66}.readstatus button:hover{box-shadow:0 0 18px #56efaa88}
