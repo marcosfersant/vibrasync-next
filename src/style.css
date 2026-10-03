@@ -81,3 +81,10 @@ button:active{transform:translateY(2px) scale(.985)!important;box-shadow:inset 0
 .organ-focus small{font-size:9px;color:#8bdde6;letter-spacing:1px}.organ-focus b{color:#ffe47b}.organ-focus span{font-size:35px;color:#5ef4e6;animation:focusSpin 4s linear infinite}.organ-focus em{font-style:normal;font-size:11px;color:#ffcf66}
 @keyframes focusSpin{to{transform:rotate(360deg)}}
 .layers button.sel{background:#064b5e!important}.layers button:not(.sel){opacity:.62}
+
+/* ITEM 7 — painel 3D manipulável da estrutura ativa */
+.organ-focus{width:180px;height:178px;padding:8px;align-content:start;gap:4px;perspective:600px}
+.focus-object{position:relative;width:82px;height:70px;margin:auto;display:grid;place-items:center;transform-style:preserve-3d;transition:transform .25s ease}
+.focus-object span{font-size:48px;color:#ffb94d;text-shadow:0 0 10px #ffe989,0 0 26px #ff733c}
+.focus-object i{position:absolute;width:74px;height:25px;border:2px solid #ffe467;border-radius:50%;box-shadow:0 0 10px #ffe467;animation:qClockwise 2.4s linear infinite}
+.organ-focus nav{display:flex;gap:4px;justify-content:center}.organ-focus nav button{min-width:26px;padding:3px 5px;border:1px solid #168da1;border-radius:5px;background:#052c3c;color:#dff}
