@@ -66,3 +66,13 @@
 .q-clockwise:after,.q-counter:after{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;border-radius:50%;background:#fff7a1;box-shadow:0 0 9px #fff,0 0 18px #ffe45a;animation:quantumParticle 1.05s ease-in-out infinite alternate}
 .q-counter:after{animation-delay:-.5s;background:#7ffff2;box-shadow:0 0 9px #fff,0 0 18px #55fff0}
 @keyframes quantumParticle{from{transform:translate(-78px,-8px) scale(.7);opacity:.55}to{transform:translate(72px,8px) scale(1.35);opacity:1}}
+
+/* PARTE D — painel 3D e camadas definitivas */
+.focus-anatomy{display:grid;place-items:center;min-width:62px;min-height:58px;font-size:44px;color:#ffb54d;text-shadow:0 0 8px #fff2a0,0 0 22px #ff7a3d;filter:drop-shadow(0 0 8px #ffc45a)}
+.focus-thyroid .focus-anatomy{letter-spacing:-8px}.focus-heart .focus-anatomy{color:#ff765f}.focus-liver .focus-anatomy{color:#ffad55}.focus-vascular_legs .focus-anatomy{color:#ffcf62}
+.atlas-approved .layer-mark{mix-blend-mode:screen;transition:opacity .25s ease,filter .25s ease}
+.atlas-approved.show-vasos .vascular{filter:drop-shadow(0 0 6px #ff765f)}
+.atlas-approved.show-nervos .nervous{filter:drop-shadow(0 0 5px #ffe86e)}
+.atlas-approved.show-linfatico .lymphatic{filter:drop-shadow(0 0 5px #7affc9)}
+.atlas-approved.show-esqueleto .skeletal{filter:drop-shadow(0 0 4px #dffcff)}
+.atlas-approved.show-muscular .muscular{filter:drop-shadow(0 0 5px #ff8a70)}
