@@ -119,3 +119,10 @@ button[disabled]{opacity:.45;cursor:not-allowed}
 .volume-actions{display:flex;gap:6px;padding:4px 12px 8px}
 .volume-actions button{flex:1;background:#042b3d;color:#dff;border:1px solid #167b90;border-radius:7px;padding:5px}
 .volume-actions button.active{border-color:#ffca62;color:#ffdf8a}
+
+/* ITEM 10.8 — geradores A/B */
+.gensrow{position:relative;padding-top:38px}
+.generator-master{position:absolute;left:12px;right:12px;top:5px;height:29px;display:flex;align-items:center;gap:8px}
+.generator-master b{margin-right:auto;color:#72f7ed;letter-spacing:1px}
+.generator-master button{background:#042b3d;color:#dff;border:1px solid #167b90;border-radius:6px;padding:4px 8px}
+.generator-master button.active{border-color:#62ff9a;color:#82ffad;box-shadow:0 0 10px #54ff8a44}
