@@ -114,3 +114,8 @@ button[disabled]{opacity:.45;cursor:not-allowed}
 .seek-controls{display:flex;justify-content:center;margin-top:2px}
 .seek-controls label{display:flex;align-items:center;gap:6px;color:#aee8ef;font-size:11px}
 .seek-controls select{background:#042b3d;color:#dff;border:1px solid #167b90;border-radius:6px;padding:3px 6px}
+
+/* ITEM 10.7 — volumes */
+.volume-actions{display:flex;gap:6px;padding:4px 12px 8px}
+.volume-actions button{flex:1;background:#042b3d;color:#dff;border:1px solid #167b90;border-radius:7px;padding:5px}
+.volume-actions button.active{border-color:#ffca62;color:#ffdf8a}
