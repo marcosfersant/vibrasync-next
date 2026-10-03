@@ -67,6 +67,72 @@ button:active{transform:translateY(2px) scale(.985)!important;box-shadow:inset 0
 .repeat-controls{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:3px}
 .repeat-controls label{display:flex;align-items:center;gap:6px;color:#aee8ef}
 .repeat-controls select,.repeat-controls button{background:#042b3d;color:#dff;border:1px solid #167b90;border-radius:7px;padding:4px 8px}
-.waveviz i{animation:waveLive 1.25s ease-in-out infinite;transform-origin:center}
+.waveviz i{animation:waveLive var(--viz-speed,1.25s) ease-in-out infinite;transform-origin:center}.waveviz.paused i{animation-play-state:paused;opacity:.55}.waveviz.running i{animation-play-state:running}
 .waveviz i:nth-child(3n){animation-delay:-.2s}.waveviz i:nth-child(4n){animation-delay:-.45s}
 @keyframes waveLive{0%,100%{transform:scaleY(.55);opacity:.7}50%{transform:scaleY(1.15);opacity:1}}
+
+.gen{grid-template-columns:190px 1fr 1fr 170px}
+.gen>div{display:grid;grid-template-columns:1fr auto;gap:3px 8px}
+.gen-target{grid-column:1/3;color:#67e8f1;white-space:nowrap}
+.gen-wave{display:grid!important;grid-template-columns:auto 1fr!important}
+.gen-wave select{background:#052c3c;border:1px solid #168da1;color:#fff;border-radius:6px;padding:5px}
+
+.organ-focus{position:absolute;left:14px;bottom:78px;width:150px;height:126px;border:1px solid #18a9bd;border-radius:12px;background:radial-gradient(circle,#0a6074aa,#032334ee);display:grid;place-items:center;z-index:5;box-shadow:inset 0 0 25px #21dcec22,0 0 14px #00eaff22}
+.organ-focus small{font-size:9px;color:#8bdde6;letter-spacing:1px}.organ-focus b{color:#ffe47b}.organ-focus span{font-size:35px;color:#5ef4e6;animation:focusSpin 4s linear infinite}.organ-focus em{font-style:normal;font-size:11px;color:#ffcf66}
+@keyframes focusSpin{to{transform:rotate(360deg)}}
+.layers button.sel{background:#064b5e!important}.layers button:not(.sel){opacity:.62}
+
+/* ITEM 7 — painel 3D manipulável da estrutura ativa */
+.organ-focus{width:180px;height:178px;padding:8px;align-content:start;gap:4px;perspective:600px}
+.focus-object{position:relative;width:82px;height:70px;margin:auto;display:grid;place-items:center;transform-style:preserve-3d;transition:transform .25s ease}
+.focus-object span{font-size:48px;color:#ffb94d;text-shadow:0 0 10px #ffe989,0 0 26px #ff733c}
+.focus-object i{position:absolute;width:74px;height:25px;border:2px solid #ffe467;border-radius:50%;box-shadow:0 0 10px #ffe467;animation:qClockwise 2.4s linear infinite}
+.organ-focus nav{display:flex;gap:4px;justify-content:center}.organ-focus nav button{min-width:26px;padding:3px 5px;border:1px solid #168da1;border-radius:5px;background:#052c3c;color:#dff}
+
+/* ITEM 10 — feedback visível de navegação e ações */
+.nav-feedback{height:38px;margin-bottom:8px;border:1px solid #0b7185;border-radius:9px;background:#032b3d;display:flex;align-items:center;gap:12px;padding:0 12px;color:#c9f9ff}
+.nav-feedback b{color:#62f4e8}.nav-feedback span{font-size:11px;color:#80bdc7}.nav-feedback button{margin-left:auto;border:0;background:transparent;color:#aeeef4;font-size:20px}
+button:focus-visible{outline:2px solid #67fff0;outline-offset:2px}
+button[disabled]{opacity:.45;cursor:not-allowed}
+
+.gen{grid-template-columns:185px repeat(6,minmax(110px,1fr));overflow-x:auto}
+.gen-advanced{display:grid!important;grid-template-columns:auto 70px auto!important;gap:5px!important}
+.gen-advanced input{width:70px;background:#052c3c;border:1px solid #168da1;color:#fff;border-radius:6px;padding:5px}
+
+/* ITEM 10.3 — programas relacionados */
+.program-search{display:grid!important;grid-template-columns:1fr 30px!important;gap:5px;padding:6px 8px!important;border-bottom:1px solid #145365}
+.program-search input{min-width:0;background:#021e2e;border:1px solid #12677b;border-radius:7px;color:#dff;padding:7px 9px}
+.program-search button{border:1px solid #12677b!important;border-radius:7px!important;background:#043246!important;color:#9ff!important}
+.related>div.program-selected{background:#07506a88;box-shadow:inset 3px 0 #4fffe5}
+
+/* ITEM 10.4 — leitura/bioimpedância */
+.reading-progress{width:calc(100% - 24px);margin:2px 12px 5px;accent-color:#55f2a3}
+.reading>p{opacity:.48;transition:.2s}.reading>p.ok{opacity:1;color:#bfffd6}.reading>p.ok svg{filter:drop-shadow(0 0 5px #54f48a)}
+
+/* ITEM 10.5 — player e navegação temporal */
+.timeline{width:100%;accent-color:#42eee1;cursor:pointer}
+.seek-controls{display:flex;justify-content:center;margin-top:2px}
+.seek-controls label{display:flex;align-items:center;gap:6px;color:#aee8ef;font-size:11px}
+.seek-controls select{background:#042b3d;color:#dff;border:1px solid #167b90;border-radius:6px;padding:3px 6px}
+
+/* ITEM 10.7 — volumes */
+.volume-actions{display:flex;gap:6px;padding:4px 12px 8px}
+.volume-actions button{flex:1;background:#042b3d;color:#dff;border:1px solid #167b90;border-radius:7px;padding:5px}
+.volume-actions button.active{border-color:#ffca62;color:#ffdf8a}
+
+/* ITEM 10.8 — geradores A/B */
+.gensrow{position:relative;padding-top:38px}
+.generator-master{position:absolute;left:12px;right:12px;top:5px;height:29px;display:flex;align-items:center;gap:8px}
+.generator-master b{margin-right:auto;color:#72f7ed;letter-spacing:1px}
+.generator-master button{background:#042b3d;color:#dff;border:1px solid #167b90;border-radius:6px;padding:4px 8px}
+.generator-master button.active{border-color:#62ff9a;color:#82ffad;box-shadow:0 0 10px #54ff8a44}
+
+/* ITEM 10.9 — onda animada sincronizada */
+.viz-controls{display:flex;align-items:center;justify-content:center;gap:6px;padding:2px 10px 6px}
+.viz-controls button{background:#042b3d;color:#dff;border:1px solid #167b90;border-radius:6px;padding:3px 7px}
+.viz-controls span{margin-left:auto;font-size:10px;color:#73e9df}
+
+/* ITEM 10.10 — fechamento da interface */
+.system-status{display:flex;align-items:center;justify-content:center;gap:6px;margin:0 auto 7px;padding:4px 8px;border:1px solid #176071;border-radius:12px;color:#9bcbd2}
+.system-status.live{border-color:#54ef91;color:#71ffa0;box-shadow:0 0 10px #50ff8240}
+.system-status span{font-size:12px}.system-status small{font-size:10px;text-transform:uppercase;letter-spacing:.8px}
