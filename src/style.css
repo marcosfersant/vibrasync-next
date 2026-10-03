@@ -104,3 +104,7 @@ button[disabled]{opacity:.45;cursor:not-allowed}
 .program-search input{min-width:0;background:#021e2e;border:1px solid #12677b;border-radius:7px;color:#dff;padding:7px 9px}
 .program-search button{border:1px solid #12677b!important;border-radius:7px!important;background:#043246!important;color:#9ff!important}
 .related>div.program-selected{background:#07506a88;box-shadow:inset 3px 0 #4fffe5}
+
+/* ITEM 10.4 — leitura/bioimpedância */
+.reading-progress{width:calc(100% - 24px);margin:2px 12px 5px;accent-color:#55f2a3}
+.reading>p{opacity:.48;transition:.2s}.reading>p.ok{opacity:1;color:#bfffd6}.reading>p.ok svg{filter:drop-shadow(0 0 5px #54f48a)}
