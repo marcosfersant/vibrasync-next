@@ -131,3 +131,8 @@ button[disabled]{opacity:.45;cursor:not-allowed}
 .viz-controls{display:flex;align-items:center;justify-content:center;gap:6px;padding:2px 10px 6px}
 .viz-controls button{background:#042b3d;color:#dff;border:1px solid #167b90;border-radius:6px;padding:3px 7px}
 .viz-controls span{margin-left:auto;font-size:10px;color:#73e9df}
+
+/* ITEM 10.10 — fechamento da interface */
+.system-status{display:flex;align-items:center;justify-content:center;gap:6px;margin:0 auto 7px;padding:4px 8px;border:1px solid #176071;border-radius:12px;color:#9bcbd2}
+.system-status.live{border-color:#54ef91;color:#71ffa0;box-shadow:0 0 10px #50ff8240}
+.system-status span{font-size:12px}.system-status small{font-size:10px;text-transform:uppercase;letter-spacing:.8px}
