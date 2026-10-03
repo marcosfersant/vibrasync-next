@@ -76,3 +76,8 @@ button:active{transform:translateY(2px) scale(.985)!important;box-shadow:inset 0
 .gen-target{grid-column:1/3;color:#67e8f1;white-space:nowrap}
 .gen-wave{display:grid!important;grid-template-columns:auto 1fr!important}
 .gen-wave select{background:#052c3c;border:1px solid #168da1;color:#fff;border-radius:6px;padding:5px}
+
+.organ-focus{position:absolute;left:14px;bottom:78px;width:150px;height:126px;border:1px solid #18a9bd;border-radius:12px;background:radial-gradient(circle,#0a6074aa,#032334ee);display:grid;place-items:center;z-index:5;box-shadow:inset 0 0 25px #21dcec22,0 0 14px #00eaff22}
+.organ-focus small{font-size:9px;color:#8bdde6;letter-spacing:1px}.organ-focus b{color:#ffe47b}.organ-focus span{font-size:35px;color:#5ef4e6;animation:focusSpin 4s linear infinite}.organ-focus em{font-style:normal;font-size:11px;color:#ffcf66}
+@keyframes focusSpin{to{transform:rotate(360deg)}}
+.layers button.sel{background:#064b5e!important}.layers button:not(.sel){opacity:.62}
