@@ -7,3 +7,14 @@
 @keyframes qClockwise{to{transform:translate(-50%,-50%) rotate(352deg)}}
 @keyframes qCounter{from{transform:translate(-50%,-50%) rotate(352deg)}to{transform:translate(-50%,-50%) rotate(-8deg)}}
 @keyframes quantumVibe{from{filter:brightness(.9);opacity:.72}to{filter:brightness(1.45);opacity:1}}
+
+.atlas-pair{position:absolute;inset:35px 170px 78px 170px;display:flex;align-items:center;justify-content:center;gap:48px;z-index:1}
+.human-atlas{position:relative;width:145px;height:390px;border:0;background:transparent!important;color:#9cf7ff;filter:drop-shadow(0 0 13px #23dfff88);opacity:.95}
+.human-atlas .head{position:absolute;left:50%;top:0;transform:translateX(-50%);width:60px;height:72px;border:2px solid #68eaffaa;border-radius:48%;background:radial-gradient(circle,#41dfff22,#0a405866)}
+.human-atlas .torso{position:absolute;left:50%;top:66px;transform:translateX(-50%);width:116px;height:285px;border:2px solid #68eaff88;border-radius:44% 44% 30% 30%;background:linear-gradient(90deg,#06364c88,#3ee5ff22,#06364c88);box-shadow:inset 0 0 35px #45e8ff33}
+.human-atlas.female .torso{width:108px;border-radius:46% 46% 38% 38%}
+.human-atlas .organs{position:absolute;left:50%;top:138px;transform:translateX(-50%);font-size:70px;color:#43dfee55;text-shadow:0 0 15px #3be9ff}
+.human-atlas small{position:absolute;bottom:0;left:0;right:0;text-align:center;color:#7beef5}
+.human-atlas:active,.human-atlas:focus{filter:drop-shadow(0 0 18px #ffe45a);outline:none}
+.targets-only{pointer-events:none;background:transparent;border:0;box-shadow:none;z-index:4;left:50%;top:38px}
+.targets-only:before,.targets-only:after{display:none}
