@@ -26,3 +26,19 @@
 .atlas-target[data-layer="VASCULAR"]{background:linear-gradient(180deg,#ffdf6466,#ff7a3544);border-color:#ffe572}
 @keyframes targetEnergy{0%,100%{transform:translate(-50%,-50%) scale(.94);filter:brightness(.9)}50%{transform:translate(-50%,-50%) scale(1.12);filter:brightness(1.55)}}
 @keyframes targetHalo{0%,100%{transform:scale(.78);opacity:.35}50%{transform:scale(1.3);opacity:1}}
+
+/* ITEM 8 — camadas anatômicas ligadas/desligadas independentemente */
+.layer-mark{display:none;position:absolute;left:50%;transform:translateX(-50%);pointer-events:none}
+.endocrine{top:102px;color:#ffe468;text-shadow:0 0 8px #ffe468}
+.vascular{top:118px;font-size:65px;color:#ff765f;opacity:.7;text-shadow:0 0 10px #ff604b}
+.nervous{top:82px;height:210px;font-size:190px;line-height:210px;color:#ffe86e;opacity:.55}
+.skeletal{top:90px;font-size:145px;color:#dffcff;opacity:.42}
+.lymphatic{top:150px;font-size:55px;color:#7affc9;opacity:.55}
+.muscular{top:95px;font-size:125px;color:#ff8a70;opacity:.3}
+.show-orgao .organs{display:block}.atlas-pair:not(.show-orgao) .organs{display:none}
+.show-sistema .endocrine{display:block}
+.show-vasos .vascular{display:block}
+.show-nervos .nervous{display:block}
+.show-esqueleto .skeletal{display:block}
+.show-linfatico .lymphatic{display:block}
+.show-muscular .muscular{display:block}
