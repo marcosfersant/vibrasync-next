@@ -98,3 +98,9 @@ button[disabled]{opacity:.45;cursor:not-allowed}
 .gen{grid-template-columns:185px repeat(6,minmax(110px,1fr));overflow-x:auto}
 .gen-advanced{display:grid!important;grid-template-columns:auto 70px auto!important;gap:5px!important}
 .gen-advanced input{width:70px;background:#052c3c;border:1px solid #168da1;color:#fff;border-radius:6px;padding:5px}
+
+/* ITEM 10.3 — programas relacionados */
+.program-search{display:grid!important;grid-template-columns:1fr 30px!important;gap:5px;padding:6px 8px!important;border-bottom:1px solid #145365}
+.program-search input{min-width:0;background:#021e2e;border:1px solid #12677b;border-radius:7px;color:#dff;padding:7px 9px}
+.program-search button{border:1px solid #12677b!important;border-radius:7px!important;background:#043246!important;color:#9ff!important}
+.related>div.program-selected{background:#07506a88;box-shadow:inset 3px 0 #4fffe5}
