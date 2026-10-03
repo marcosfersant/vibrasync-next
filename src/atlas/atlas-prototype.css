@@ -56,3 +56,13 @@
 .atlas-target-layer .atlas-target[data-target]{filter:brightness(1.25) saturate(1.18);mix-blend-mode:screen}
 .atlas-target-layer .atlas-target[data-target]:before{content:"";position:absolute;inset:-18px;border-radius:50%;background:radial-gradient(circle,#ffe98233,transparent 68%);animation:targetBreath 1.15s ease-in-out infinite}
 @keyframes targetBreath{0%,100%{transform:scale(.8);opacity:.35}50%{transform:scale(1.35);opacity:.9}}
+
+/* PARTE C — Campo Quântico definitivo sobre o alvo ativo */
+.quantum-ring.ring-male{margin-left:-96px}
+.quantum-ring.ring-female{margin-left:96px}
+.quantum-ring{z-index:9;pointer-events:none;transition:left .65s ease,top .65s ease,margin-left .45s ease}
+.q-clockwise{border-style:solid;border-color:#ffe66b;box-shadow:0 0 8px #fff49a,0 0 22px #ffd84d,0 0 42px #ff9d31}
+.q-counter{border-style:dashed;border-color:#67fff0;box-shadow:0 0 8px #9ffff6,0 0 22px #57f6ea,0 0 38px #ffe05b}
+.q-clockwise:after,.q-counter:after{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;border-radius:50%;background:#fff7a1;box-shadow:0 0 9px #fff,0 0 18px #ffe45a;animation:quantumParticle 1.05s ease-in-out infinite alternate}
+.q-counter:after{animation-delay:-.5s;background:#7ffff2;box-shadow:0 0 9px #fff,0 0 18px #55fff0}
+@keyframes quantumParticle{from{transform:translate(-78px,-8px) scale(.7);opacity:.55}to{transform:translate(72px,8px) scale(1.35);opacity:1}}
