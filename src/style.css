@@ -88,3 +88,9 @@ button:active{transform:translateY(2px) scale(.985)!important;box-shadow:inset 0
 .focus-object span{font-size:48px;color:#ffb94d;text-shadow:0 0 10px #ffe989,0 0 26px #ff733c}
 .focus-object i{position:absolute;width:74px;height:25px;border:2px solid #ffe467;border-radius:50%;box-shadow:0 0 10px #ffe467;animation:qClockwise 2.4s linear infinite}
 .organ-focus nav{display:flex;gap:4px;justify-content:center}.organ-focus nav button{min-width:26px;padding:3px 5px;border:1px solid #168da1;border-radius:5px;background:#052c3c;color:#dff}
+
+/* ITEM 10 — feedback visível de navegação e ações */
+.nav-feedback{height:38px;margin-bottom:8px;border:1px solid #0b7185;border-radius:9px;background:#032b3d;display:flex;align-items:center;gap:12px;padding:0 12px;color:#c9f9ff}
+.nav-feedback b{color:#62f4e8}.nav-feedback span{font-size:11px;color:#80bdc7}.nav-feedback button{margin-left:auto;border:0;background:transparent;color:#aeeef4;font-size:20px}
+button:focus-visible{outline:2px solid #67fff0;outline-offset:2px}
+button[disabled]{opacity:.45;cursor:not-allowed}
