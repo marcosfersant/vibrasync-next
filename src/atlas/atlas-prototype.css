@@ -42,3 +42,9 @@
 .show-esqueleto .skeletal{display:block}
 .show-linfatico .lymphatic{display:block}
 .show-muscular .muscular{display:block}
+
+/* PARTE A — Atlas visual aprovado: dois corpos definitivos, sem silhueta antiga */
+.atlas-approved{z-index:2}
+.atlas-target-layer{position:absolute;inset:0;z-index:6;pointer-events:none}
+.atlas-target-layer:before,.atlas-target-layer:after{display:none!important}
+.atlas-target-layer .atlas-target{position:absolute}
