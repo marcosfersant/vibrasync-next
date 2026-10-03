@@ -21,3 +21,6 @@ O código deste protótipo foi escrito separadamente; não inclui modelos anatô
 ## Rodar
 npm install
 npm run dev
+
+
+<!-- amplify-trigger: 2026-10-03 atlas-target-engine -->
